@@ -35,3 +35,11 @@ An AI-powered Streamlit web app that lets you **chat with your PDF documents** u
 ```bash
 git clone https://github.com/Abhinav-Sai-Podugu/PDF_Reader_Chatbot.git
 cd PDF_Reader_Chatbot
+
+### 2. Create & Activate Virtual Environment (Optional but recommended)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # on Linux/macOS
+.venv\Scripts\activate      # on Windows
+
