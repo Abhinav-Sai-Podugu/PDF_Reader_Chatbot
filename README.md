@@ -81,3 +81,36 @@ streamlit run app.py
 ```
 
 Then visit http://localhost:8501 in your browser.
+
+---
+
+## 📁 File Structure
+
+```bash
+PDF_Reader_Chatbot/
+│
+├── app.py              # Main Streamlit app
+├── .env.template       # Example env file (NO real keys)
+├── .gitignore          # Excludes .env, .venv, etc.
+├── requirements.txt    # All dependencies
+├── README.md           # You’re here!
+└── chroma_data/        # Persistent vector DB (created at runtime)
+```
+
+---
+
+## 🧪 How It Works
+
+1. PDF Upload → PyPDF2 extracts text
+
+2. Text Chunking → Split into overlapping chunks with LangChain
+
+3. Embeddings → Created using all-MiniLM-L6-v2 model from HuggingFace
+
+4. Vector DB → Stored in Chroma for fast semantic retrieval
+
+5. Multi-Query Retriever → Improves document match quality
+
+6. LLM Chain → LLM answers based on retrieved context only
+
+   
