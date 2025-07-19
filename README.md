@@ -12,3 +12,26 @@ An AI-powered Streamlit web app that lets you **chat with your PDF documents** u
 - 🔍 Semantic search with HuggingFace embeddings (`all-MiniLM-L6-v2`)
 - 🔗 LLM backend via OpenRouter (Mistral-7B-Instruct or others)
 - 💬 Clean chat interface powered by `streamlit-chat`
+
+---
+
+## 🧱 Tech Stack
+
+| Tool             | Purpose                                |
+|------------------|----------------------------------------|
+| `Streamlit`      | Web interface                          |
+| `LangChain`      | RAG pipeline, retrieval & chaining     |
+| `Chroma`         | Local vector database                  |
+| `HuggingFace`    | Embeddings for semantic search         |
+| `OpenRouter`     | LLM API compatible with OpenAI SDK     |
+| `PyPDF2`         | PDF text extraction                    |
+
+---
+
+## 🖥️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Abhinav-Sai-Podugu/PDF_Reader_Chatbot.git
+cd PDF_Reader_Chatbot
